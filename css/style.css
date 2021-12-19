@@ -17,22 +17,40 @@ body{
     font-family: var(--font-family);
 }
 ul{
-    margin: 0;
+     margin: 0; 
+}
+span{
+    font-size: 1.5rem;
 }
 
-h1{
-    font-size: 9rem;
+ h1{
+    padding-top: 11rem;
+    margin: 0;
+    font-size: 5.2rem  !important ; 
     color: var(--colorterciario);
-}
-.navbar{
-    background-color: #00000028;
+    line-height: 3.6rem;
+} 
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: #00000018;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 0.5rem;
 }
+.nav.active{
+    background-color:#00000086;
+    padding: 0.6rem;
+}
+
+.nav.active a{
+color: var(--blanco);
+}
 .menu{
     display: flex;
+    gap: 1.5rem;
+    margin-right: 3rem;
 }
 .menu li {
     
@@ -44,7 +62,7 @@ h1{
     color: var(--colorterciario);
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 
 .menu li a:hover{
@@ -52,4 +70,14 @@ h1{
     background-color: var(--colorterciario);
     color: var(--colorsecundario);
     border-radius: 15px;
+}
+.h1p{
+    
+    width: 20rem;
+    margin-left: 3rem;
+
+}
+
+.scrol{
+    height: 70rem;
 }
